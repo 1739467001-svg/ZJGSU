@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  font-family: 'Inter', system-ui, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #e6edf7;
+  user-select: none;
+}
+
+#root {
+  position: relative;
+}
+
+@layer components {
+  .glass {
+    @apply bg-ink-800/70 backdrop-blur-xl border border-white/10;
+  }
+  .glass-strong {
+    @apply bg-ink-900/80 backdrop-blur-2xl border border-white/10;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-[11px] font-medium;
+  }
+  .stat-num {
+    @apply font-mono font-semibold tabular-nums tracking-tight;
+  }
+}
+
+/* thin custom scrollbar for side panels */
+.scroll-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+}
+.scroll-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* range input (time scrubber) */
+input[type='range'].scrubber {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  outline: none;
+}
+input[type='range'].scrubber::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ff6b3d;
+  border: 2px solid #fff;
+  box-shadow: 0 0 14px rgba(255, 107, 61, 0.7);
+  cursor: pointer;
+}
+input[type='range'].scrubber::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ff6b3d;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.text-gradient {
+  background: linear-gradient(92deg, #ff6b3d 0%, #ffb347 60%, #38bdf8 130%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grid-fade {
+  -webkit-mask-image: radial-gradient(circle at center, black 55%, transparent 100%);
+  mask-image: radial-gradient(circle at center, black 55%, transparent 100%);
+}
