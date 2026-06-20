@@ -90,7 +90,7 @@ export default function RoomBlock({ room }: { room: Room }) {
           className="w-[150px] rounded-lg border px-2.5 py-1.5 backdrop-blur-md transition"
           style={{
             borderColor: hovered || isSelected ? accent : 'rgba(255,255,255,0.14)',
-            background: 'rgba(5,7,13,0.78)',
+            background: 'rgba(8,28,52,0.80)',
             boxShadow: hovered || isSelected ? `0 0 20px ${accent}66` : 'none',
           }}
         >

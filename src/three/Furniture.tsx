@@ -165,7 +165,7 @@ export function DoorPanel({ position, rotation = [0, 0, 0] }: { position: Vec3; 
       {/* light strip above the door */}
       <mesh position={[0, 1.18, 0]}>
         <boxGeometry args={[1.1, 0.05, 0.05]} />
-        <meshBasicMaterial color="#38bdf8" />
+        <meshBasicMaterial color="#1f6fe0" />
       </mesh>
     </group>
   )

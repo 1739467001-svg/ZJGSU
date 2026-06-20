@@ -78,10 +78,18 @@ input[type='range'].scrubber::-moz-range-thumb {
 }
 
 .text-gradient {
-  background: linear-gradient(92deg, #ff6b3d 0%, #ffb347 60%, #38bdf8 130%);
+  background: linear-gradient(92deg, #ff6b3d 0%, #f5c84b 45%, #4f97f5 110%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+/* 工商蓝 ambient backdrop behind the transparent 3D canvas */
+.app-bg {
+  background:
+    radial-gradient(1200px 760px at 72% -12%, rgba(31, 111, 224, 0.26), transparent 60%),
+    radial-gradient(1000px 720px at 8% 116%, rgba(10, 63, 143, 0.34), transparent 56%),
+    linear-gradient(180deg, #071a33 0%, #0a2342 52%, #06152b 100%);
 }
 
 .grid-fade {

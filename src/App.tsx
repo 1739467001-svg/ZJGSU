@@ -66,7 +66,7 @@ export default function App() {
   }, [back])
 
   return (
-    <div className="relative h-screen w-screen overflow-hidden bg-ink-900 text-white">
+    <div className="app-bg relative h-screen w-screen overflow-hidden text-white">
       <div className="absolute inset-0">
         <Scene />
       </div>

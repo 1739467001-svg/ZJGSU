@@ -30,12 +30,12 @@ export default function TimeScrubber() {
         <div className="mb-2 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <span className="text-[11px] uppercase tracking-wider text-white/40">时间轴</span>
-            <span className="stat-num text-base font-bold text-shrimp">{slotLabel(slotIndex)}</span>
+            <span className="stat-num text-base font-bold text-zsblue-light">{slotLabel(slotIndex)}</span>
           </div>
           <div className="flex items-center gap-3">
             <LegendDot color="#22d39a" label="空闲" />
-            <LegendDot color="#ff4d6d" label="已占用" />
-            <LegendDot color="#38bdf8" label="我的" />
+            <LegendDot color="#ff5d7a" label="已占用" />
+            <LegendDot color="#22d3ee" label="我的" />
           </div>
         </div>
 
@@ -50,7 +50,7 @@ export default function TimeScrubber() {
             </button>
             <button
               onClick={togglePlay}
-              className="grid h-9 w-9 place-items-center rounded-lg bg-shrimp text-white shadow-glow-orange transition hover:brightness-110"
+              className="grid h-9 w-9 place-items-center rounded-lg bg-zsblue text-white shadow-glow-blue transition hover:brightness-110"
             >
               {playing ? <Pause size={16} /> : <Play size={16} className="ml-0.5" />}
             </button>

@@ -79,7 +79,7 @@ export default function RoomInterior({ room }: { room: Room }) {
           depthScale={0.4}
           minDepthThreshold={0.4}
           maxDepthThreshold={1.2}
-          color="#0a0e18"
+          color="#0a1a32"
           metalness={0.55}
         />
       </mesh>
@@ -94,22 +94,22 @@ export default function RoomInterior({ room }: { room: Room }) {
       {/* ceiling */}
       <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, h, 0]}>
         <planeGeometry args={[w, d]} />
-        <meshStandardMaterial color="#0b1018" roughness={0.9} side={THREE.DoubleSide} />
+        <meshStandardMaterial color="#0a1830" roughness={0.9} side={THREE.DoubleSide} />
       </mesh>
       {/* back wall */}
       <mesh position={[0, h / 2, -d / 2]} receiveShadow>
         <boxGeometry args={[w, h, 0.12]} />
-        <meshStandardMaterial color="#111a2b" roughness={0.9} />
+        <meshStandardMaterial color="#122742" roughness={0.9} />
       </mesh>
       {/* left wall */}
       <mesh position={[-w / 2, h / 2, 0]} receiveShadow>
         <boxGeometry args={[0.12, h, d]} />
-        <meshStandardMaterial color="#0f1726" roughness={0.9} />
+        <meshStandardMaterial color="#102540" roughness={0.9} />
       </mesh>
       {/* right wall */}
       <mesh position={[w / 2, h / 2, 0]} receiveShadow>
         <boxGeometry args={[0.12, h, d]} />
-        <meshStandardMaterial color="#0f1726" roughness={0.9} />
+        <meshStandardMaterial color="#102540" roughness={0.9} />
       </mesh>
       {/* baseboard accent line along back wall */}
       <mesh position={[0, 0.06, -d / 2 + 0.07]}>
@@ -210,7 +210,7 @@ export default function RoomInterior({ room }: { room: Room }) {
           className="animate-pulse-glow whitespace-nowrap rounded-xl border px-4 py-2 text-center backdrop-blur-md"
           style={{
             borderColor: accent,
-            background: 'rgba(5,7,13,0.72)',
+            background: 'rgba(8,28,52,0.74)',
             boxShadow: `0 0 26px ${accent}66`,
           }}
         >

@@ -8,8 +8,8 @@ export const cn = (...inputs: ClassValue[]) => clsx(inputs)
 /** Status palette shared by 3D materials and DOM UI. */
 export const STATUS_COLOR: Record<RoomStatus, string> = {
   free: '#22d39a',
-  busy: '#ff4d6d',
-  mine: '#38bdf8',
+  busy: '#ff5d7a',
+  mine: '#22d3ee',
 }
 
 export function bookingAt(

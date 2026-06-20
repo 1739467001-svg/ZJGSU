@@ -37,7 +37,7 @@ export function EquipmentChips({
             key={k}
             className="chip bg-white/5 text-white/70 ring-1 ring-white/10"
           >
-            <Icon size={size} className="text-shrimp" />
+            <Icon size={size} className="text-zsblue-light" />
             {EQUIPMENT_LABEL[k]}
           </span>
         )

@@ -49,16 +49,25 @@ export default function TopBar() {
   return (
     <header className="pointer-events-none absolute inset-x-0 top-0 z-30 flex items-center justify-between gap-4 px-4 py-3">
       <div className="pointer-events-auto flex items-center gap-3">
-        <div className="grid h-11 w-11 place-items-center rounded-xl bg-shrimp/15 text-2xl ring-1 ring-shrimp/40">
-          🦐
-        </div>
+        <img
+          src={`${import.meta.env.BASE_URL}zjgsu-emblem.svg`}
+          alt="浙江工商大学"
+          className="h-11 w-11 drop-shadow-[0_0_12px_rgba(31,111,224,0.55)]"
+        />
         <div className="leading-tight">
-          <h1 className="text-[17px] font-extrabold tracking-tight">
+          <h1 className="flex items-center gap-1.5 text-[17px] font-extrabold tracking-tight">
+            <span className="text-base">🦐</span>
             会议室预约虾 <span className="text-gradient">· 数字孪生</span>
           </h1>
-          <p className="text-[11px] text-white/45">
+          <p className="text-[11px] text-white/55">
             浙江工商大学 · 信电人工智能学院 — 三维现实模拟 Reality-Twin
           </p>
+        </div>
+        <div className="ml-2 hidden items-center gap-2 rounded-lg border border-zsblue/30 bg-zsblue/10 px-2.5 py-1 lg:flex">
+          <span className="text-[10px] uppercase tracking-widest text-zsblue-light">校训</span>
+          <span className="text-[12px] font-semibold tracking-[0.25em] text-white/85">
+            诚 毅 勤 朴
+          </span>
         </div>
       </div>
 
@@ -73,17 +82,17 @@ export default function TopBar() {
           icon={<Activity size={16} />}
           label="当前占用"
           value={`${busy}/${ROOMS.length}`}
-          accent="#ff4d6d"
+          accent="#ff5d7a"
         />
         <Stat
           icon={<Layers size={16} />}
           label="整体利用率"
           value={pct(utilization(bookings))}
-          accent="#38bdf8"
+          accent="#4f97f5"
         />
         <Stat icon={<Zap size={16} />} label="历史数据" value="1022 条" />
         <div className="ml-1 rounded-lg bg-ink-900/70 px-3 py-1.5 text-right ring-1 ring-white/10">
-          <div className="stat-num text-base text-shrimp">{clock}</div>
+          <div className="stat-num text-base text-zsblue-light">{clock}</div>
           <div className="text-[10px] text-white/40">{date}</div>
         </div>
       </div>

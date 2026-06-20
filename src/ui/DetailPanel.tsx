@@ -44,9 +44,9 @@ export default function DetailPanel() {
       {/* meta */}
       <div className="space-y-2.5 border-b border-white/10 px-4 py-3 text-[12px] text-white/60">
         <div className="flex flex-wrap gap-x-4 gap-y-1">
-          <span className="flex items-center gap-1"><MapPin size={13} className="text-shrimp" /> {room.floor} 楼</span>
-          <span className="flex items-center gap-1"><Users size={13} className="text-shrimp" /> 可容纳 {room.capacity} 人</span>
-          <span className="flex items-center gap-1"><User size={13} className="text-shrimp" /> 管理员 {room.manager}</span>
+          <span className="flex items-center gap-1"><MapPin size={13} className="text-zsblue-light" /> {room.floor} 楼</span>
+          <span className="flex items-center gap-1"><Users size={13} className="text-zsblue-light" /> 可容纳 {room.capacity} 人</span>
+          <span className="flex items-center gap-1"><User size={13} className="text-zsblue-light" /> 管理员 {room.manager}</span>
         </div>
         <EquipmentChips items={room.equipment} />
       </div>

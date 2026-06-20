@@ -71,7 +71,7 @@ export default function Sidebar() {
                       <Users size={12} /> {room.capacity}人
                     </span>
                     <span>全天 {dayBooked(bookings, room.id)}/{TIME_SLOTS.length}</span>
-                    <span className="ml-auto flex items-center gap-0.5 text-white/30 group-hover:text-shrimp">
+                    <span className="ml-auto flex items-center gap-0.5 text-white/30 group-hover:text-zsblue-light">
                       进入 <ChevronRight size={12} />
                     </span>
                   </div>
